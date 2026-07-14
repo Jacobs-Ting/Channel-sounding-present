@@ -18,6 +18,7 @@
     .measurement-warning b,.measurement-warning span{display:block}.measurement-warning span{margin-top:7px;color:#d9a68c}
     .measurement-ok{border:1px solid #668d31;background:rgba(134,188,50,.08);color:var(--lime);text-align:center}
     .state-unknown{color:#ff7d7d!important;text-shadow:0 0 12px rgba(255,90,90,.22)}.state-confirmed{color:var(--lime)!important;text-shadow:0 0 12px rgba(199,243,90,.2)}
+    .title-slide{min-height:360px;display:grid;align-content:center;padding:46px;border:1px solid #29434f;background:linear-gradient(135deg,rgba(45,160,183,.12),rgba(8,25,34,.88))}.title-agenda{padding:34px;border:1px solid #29434f;background:#0a1f29}.title-agenda h3{margin:0 0 26px;color:var(--cyan);font:26px var(--mono);letter-spacing:4px}.title-agenda ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 28px}.title-agenda li{color:#aab9c0;font:14px var(--mono);line-height:1.5}.title-agenda li b{color:var(--cyan);margin-right:10px;font-weight:700}
     .version-compare{display:grid;grid-template-columns:1fr 1fr;gap:18px}.version-card{padding:28px;border:1px solid #29434f;background:rgba(8,25,34,.75)}
     .version-card.highlight{border-color:var(--cyan);box-shadow:inset 0 0 28px rgba(114,231,250,.07)}.version-card h3{font:24px var(--mono);margin:0 0 20px}.version-card.highlight h3{color:var(--cyan)}
     .version-card ul{list-style:none;padding:0;margin:0}.version-card li{padding:11px 0;border-bottom:1px solid #20343e;color:#93a4ad}.version-card li:before{content:'—';color:#4f6b78;margin-right:10px}.version-card.highlight li:before{content:'✓';color:var(--cyan)}
@@ -51,7 +52,8 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Bluetooth Channel Sounding Lab"><span>BT</span></a>
     <nav class="mode-nav" aria-label="Ranging modes">
-      <button class="mode-tab active" data-mode="overview"><b>00</b><strong>5.0 / 6.0</strong><small>Version comparison</small></button>
+      <button class="mode-tab active" data-mode="intro"><b>00</b><strong>Intro</strong><small>Title page</small></button>
+      <button class="mode-tab" data-mode="overview"><b>01</b><strong>5.0 / 6.0</strong><small>Version comparison</small></button>
       <button class="mode-tab" data-mode="tech"><b> + </b><strong>Ranging</strong><small>Technology comparison</small></button>
       <button class="mode-tab" data-mode="market"><b>＄</b><strong>Market</strong><small>Market share and value</small></button>
       <button class="mode-tab" data-mode="csintro"><b>CS</b><strong>Overview</strong><small>Technology overview</small></button>
@@ -72,7 +74,7 @@
       <p class="eyebrow" id="mode-label"></p>
       <h1 id="mode-title"></h1>
       <p class="lede" id="mode-description"></p>
-      <div class="formula"><span>Core relationship</span><strong id="mode-formula"></strong></div>
+      <div class="formula"><span>Core relationship</span><div class="formula-row"><strong id="mode-formula"></strong><a id="formula-link" class="formula-link" href="assets/pbr-phase-ambiguity.png" target="_blank" rel="noopener">數學原理說明</a></div></div>
       <div id="concept-visual" class="concept-visual"></div>
       <article id="feature-card" class="feature-card"></article>
     </section>
